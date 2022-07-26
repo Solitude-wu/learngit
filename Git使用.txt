@@ -1,7 +1,11 @@
 2022_0726
 	1、修改文件（在git仓库文件夹下添加文件）
-	1）命令 gcc add 添加文件（可以反复多次调用）
-	2）命令 gcc commit -m "message" 添加本次修改说明
+	1）命令 git add 添加文件（可以反复多次调用）
+	2）命令 git commit -m "message" 添加本次修改说明
 	2、查看仓库状态
-	1）命令 gcc status 可以查看当前仓库的状态
-	2）命令 gcc diff 可以查看具体修改内容
+	1）命令 git status 可以查看当前仓库的状态
+	2）命令 git diff 可以查看具体修改内容
+	3、版本回退
+	1）命令 git log 可以查看文件修改日志（加后缀--pretty=oneline可以精简log内容）
+	2）命令 git reset --hard <版本号> 可以回退到对应的版本
+	3）命令 git reflog 会记录每一次命令
