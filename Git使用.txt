@@ -17,3 +17,11 @@
 	2）关联一个远程库时必须给远程库指定一个名字，origin是默认习惯命名；
 	3）关联后，使用命令git push -u origin master第一次推送master分支的所有内容；
 	此后，每次本地提交后，只要有必要，就可以使用命令git push origin master推送最新修改；
+6、关于多台电脑同步一个github账号的操作
+	1）安装git 
+	2）git bash中声名机器（电脑）的“身份”
+		$ git config --global user.name "Your Name"
+		$ git config --global user.email "email@example.com"
+	3）创建SSH Key，一路回车
+		$ ssh-keygen -t rsa -C "youremail@example.com"
+	4）登陆GitHub，Settings->SSH and GPG keys->New SSHs 填上任意Title，在Key文本框里粘贴id_rsa.pub文件的内容
