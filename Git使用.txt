@@ -25,3 +25,11 @@
 	3）创建SSH Key，一路回车
 		$ ssh-keygen -t rsa -C "youremail@example.com"
 	4）登陆GitHub，Settings->SSH and GPG keys->New SSHs 填上任意Title，在Key文本框里粘贴id_rsa.pub文件的内容
+2022_0727
+	1、创建与合并分支
+	查看分支：git branch
+	创建分支：git branch <name>
+	切换分支：git checkout <name>或者git switch <name>
+	创建+切换分支：git checkout -b <name>或者git switch -c <name>
+	合并某分支到当前分支：git merge <name>
+	删除分支：git branch -d <name>
