@@ -60,4 +60,10 @@
 	当bug解决之后 		->使用命令 git stash apply 或者 ->使用命令 git stash pop	恢复
 	注意：dev是从master上分支出来的，所以这个bug也在dev分支上，需要把master上<修改的内容>添加到dev分支上
 	->使用命令 git cherry-pick <commit> 即可把commit这个提交所做的修改“复制”到dev分支，而不改变其他内容
-4、E盘dev版本测试--添加最后一行
+4、多人协作的工作方式
+	1）试图用git push origin <branch-name>推送自己的修改
+	2）如果推送失败，则因为远程分支比你的本地更新，需要先用git pull试图合并
+	3）如果合并有冲突，则解决冲突，并在本地提交。没有冲突或者解决掉冲突后
+	再用git push origin <branch-name>推送就能成功
+	如果git pull提示no tracking information，则说明本地分支和远程分支的链接关系没有创建
+	->使用命令 git branch --set-upstream-to <branch-name> origin/<branch-name>
