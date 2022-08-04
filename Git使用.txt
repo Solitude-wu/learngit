@@ -60,3 +60,4 @@
 	当bug解决之后 		->使用命令 git stash apply 或者 ->使用命令 git stash pop	恢复
 	注意：dev是从master上分支出来的，所以这个bug也在dev分支上，需要把master上<修改的内容>添加到dev分支上
 	->使用命令 git cherry-pick <commit> 即可把commit这个提交所做的修改“复制”到dev分支，而不改变其他内容
+3、测试多人协作
